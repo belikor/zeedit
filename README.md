@@ -60,8 +60,8 @@ sudo pacman -S python-pip  # for Arch
 
 ### lbrytools
 
-You must have the [lbrytools](https://github.com/belikor/lbrytools/tree/master/lbrytools)
-library (the `lbrytools/` directory that has the `__init__.py`).
+You must have the [lbrytools](https://github.com/belikor/lbrytools)
+library.
 
 Clone this repository using Git with `--recurse-submodules`
 to include `lbrytools` with the rest of the code:
@@ -94,8 +94,8 @@ cd zeedit/
 git pull
 ```
 
-The [lbrytools](https://github.com/belikor/lbrytools/tree/submodule) library
-is hosted in its own repository (under the `submodule` branch),
+The [lbrytools](https://github.com/belikor/lbrytools) library
+is hosted in its own repository,
 and is used in this program as a submodule.
 To update this component:
 ```sh
@@ -105,7 +105,6 @@ git submodule update --remote --rebase lbrytools/
 If this causes merging errors you may have to update the submodule manually:
 ```sh
 cd zeedit/lbrytools/
-git checkout submodule
 git fetch
 git reset --hard FETCH_HEAD
 ```

@@ -1,0 +1,3 @@
+[submodule "lbrytools"]
+	path = lbrytools
+	url = https://github.com/belikor/lbrytools
